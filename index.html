@@ -12,7 +12,7 @@
     <!-- Подключаем Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
 </head>
 <body>
     
@@ -250,7 +250,7 @@
             <h1 class="text-center">Кометнтируй свое впечатленее </h1>
             <div class="container">
                 <div class="row">
-                    <div class="vk_comment" id='716657084_244'></div>
+                    <div id="vk_comments"></div>
                     </div>
                 </div>
             </div>
@@ -336,10 +336,10 @@
 
 
         window.onload = function () {
-     VK.init({apiId: 111, onlyWidgets: true});
-     VK.Widgets.Comments('716657084_244', {limit: 15}, 321);
+        VK.init({ apiId: 51525986, onlyWidgets: true });
+        VK.Widgets.Comments("vk_comments", {limit: 15, attach: "*"});
     }
 
     </script>
 </body>
-</html>
+</html>716657084_244
